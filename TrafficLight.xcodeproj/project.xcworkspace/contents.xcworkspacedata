@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/nikitatysenko/Documents/HW2_v2.Tyschenko/TrafficLight.xcodeproj">
    </FileRef>
 </Workspace>

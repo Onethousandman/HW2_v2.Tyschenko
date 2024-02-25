@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2_v2_Tyschenko" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="xrR-f8-Grl">
+                                <rect key="frame" x="121.66666666666669" y="99" width="150" height="530"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-Bd-dfb">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VQT-Bd-dfb" secondAttribute="height" multiplier="1:1" id="ylU-A4-FNv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcN-7K-vwX">
+                                        <rect key="frame" x="0.0" y="190" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1j5-dg-kuC">
+                                        <rect key="frame" x="0.0" y="380" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-NE-LAx">
+                                <rect key="frame" x="102.66666666666667" y="696" width="187.66666666666663" height="102"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fnv-NE-LAx" secondAttribute="height" multiplier="125:68" id="r7a-Vi-aIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="lightColorChange" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFM-RF-gi4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fnv-NE-LAx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.119718" id="3Gt-LV-fwI"/>
+                            <constraint firstItem="fnv-NE-LAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cw8-BY-jz4"/>
+                            <constraint firstItem="xrR-f8-Grl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="XZN-PU-epN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fnv-NE-LAx" secondAttribute="bottom" constant="20" id="Xlr-s3-BM0"/>
+                            <constraint firstItem="xrR-f8-Grl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rec-CE-ANZ"/>
+                            <constraint firstItem="VQT-Bd-dfb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.176056" id="ry6-Gx-9rU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="1j5-dg-kuC" id="Dxc-PY-hd9"/>
+                        <outlet property="lightChangeButton" destination="fnv-NE-LAx" id="kNq-W3-Ys8"/>
+                        <outlet property="redLightView" destination="VQT-Bd-dfb" id="gD0-lV-UA4"/>
+                        <outlet property="yellowLightView" destination="gcN-7K-vwX" id="691-fj-aud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.625" y="3.1690140845070425"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
